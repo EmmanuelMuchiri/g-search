@@ -10,8 +10,6 @@ import { Repos } from '../repos';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  // profile:any[];
-  // repos: any[];
   username:string;
   profile:User;
   repos:Repos
@@ -34,10 +32,11 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     interface ApiResponse{
-        name: string;
+    name: string;
     login: string;
     avatar_url: any;
     html_url: string;
+    public_repos: string;
     }
   }
 
