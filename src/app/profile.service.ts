@@ -10,12 +10,12 @@ import 'rxjs/add/operator/map';
 export class ProfileService {
 
   private username: string;
-  private clientid = 'b6b89a49e6c5541b19b8';
-  private clientsecret = 'c5f4c771454fd6005f7cae93fedd23bd6cb02460';
+  private clientid = 'b9df7228b72cb025a0c8';
+  private clientsecret = '734fbd270cd924eda0b1653ae0d154f8ecb139f3';
   constructor(private http: Http) {
     // tslint:disable-next-line: quotemark
-    console.log("Service is now ready!");
-    this.username = 'markian';
+    // console.log("Service is now ready!");
+    this.username = 'emmanuelmuchiri';
   }
   getProfileInfo(){
   	return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientsecret)
