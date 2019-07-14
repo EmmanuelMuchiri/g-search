@@ -14,7 +14,7 @@ export class ProfileService {
   private clientsecret = '734fbd270cd924eda0b1653ae0d154f8ecb139f3';
   constructor(private http: Http) {
     // tslint:disable-next-line: quotemark
-    console.log("Service is now ready!");
+    // console.log("Service is now ready!");
     this.username = 'emmanuelmuchiri';
   }
   getProfileInfo(){
