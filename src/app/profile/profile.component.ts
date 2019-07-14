@@ -7,7 +7,7 @@ import { ProfileService } from '../profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  profile:ProfileComponent[];
+  profile:any[];
   repos: any[];
   username:string;
 
@@ -19,7 +19,7 @@ export class ProfileComponent implements OnInit {
   	this.profileService.updateProfile(this.username);
   	this.profileService.getProfileInfo().subscribe(profile => {
   		console.log(profile);
-  		this.profile = profile;
+  		this.profile = profile.any;
   	})
 
   	this.profileService.getProfileRepos().subscribe(repos => {
